@@ -49,3 +49,18 @@ const outfit = {
     return `You will buy a ${top.name}, a ${bottom.name}, and a ${accessorie.name}, and the total price is ${totalPrice}.`;
 }
 };
+
+outfit.addItemToCart('tops', 'tank top', 15.00);
+outfit.addItemToCart('tops', 'crop top', 20.00);
+outfit.addItemToCart('tops', 'sweater', 32.50);
+
+outfit.addItemToCart('bottoms', 'skirt', 22.50);
+outfit.addItemToCart('bottoms', 'pair of short shorts', 25.00);
+outfit.addItemToCart('bottoms', 'kilt', 45.00);
+
+outfit.addItemToCart('accessories', 'necklace', 15.00);
+outfit.addItemToCart('accessories', 'purse', 85.00);
+outfit.addItemToCart('accessories', 'pair of earrings', 10.00);
+
+const fullOutfit = outfit.generateRandomOutfit();
+console.log(fullOutfit);
