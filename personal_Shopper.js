@@ -29,4 +29,9 @@ const outfit = {
             accessories: this.accessories,
         };
     },
+    addItemToCart (pieceType, pieceName, piecePrice) {
+        const piece = {
+            name: pieceName,
+            price: piecePrice
+        };
 }
