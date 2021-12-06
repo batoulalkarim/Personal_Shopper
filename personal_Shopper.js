@@ -41,4 +41,11 @@ const outfit = {
         const randomIndex = Math.floor(Math.random() * item.length);
         return item [randomIndex];
 },
+    generateRandomOutfit() {
+    const top = this.getRandomPieceFromCart('tops');
+    const bottom = this.getRandomPieceFromCart('bottoms');
+    const accessorie = this.getRandomPieceFromCart('accessories');
+    const totalPrice = top.price + bottom.price + accessorie.price;
+    return `You will buy a ${top.name}, a ${bottom.name}, and a ${accessorie.name}, and the total price is ${totalPrice}.`;
 }
+};
