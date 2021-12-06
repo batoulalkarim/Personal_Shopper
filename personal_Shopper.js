@@ -34,4 +34,7 @@ const outfit = {
             name: pieceName,
             price: piecePrice
         };
+        return this._pieces[pieceType].push(piece);
+},
+
 }
