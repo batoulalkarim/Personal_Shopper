@@ -36,5 +36,9 @@ const outfit = {
         };
         return this._pieces[pieceType].push(piece);
 },
-
+    getRandomPieceFromCart(pieceType) {
+        const item = this._pieces[pieceType];
+        const randomIndex = Math.floor(Math.random() * item.length);
+        return item [randomIndex];
+},
 }
